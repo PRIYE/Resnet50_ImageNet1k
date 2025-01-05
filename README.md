@@ -1,9 +1,14 @@
 # ImageNet Classification with ResNet50
 
-This project implements a ResNet50-based image classifier for the ImageNet dataset using PyTorch Lightning.
+This project implements a ResNet50-based image classifier for the ImageNet dataset using PyTorch Lightning trained on EC2 g6 instance
+
+## HuggingFace Space Link
+
+https://huggingface.co/spaces/PriyePrabhakar/ResNet50_ImageNet_Classifier
 
 ## Project Structure
 
+```
 Resnet_ImageNet/
 ├── src/
 │ ├── datamodules/
@@ -19,16 +24,19 @@ Resnet_ImageNet/
 │ ├── checkpoints/
 │ └── image_net_classifications/
 └── requirements.txt
+```
 
 ## Setup
 
 1. Install dependencies:
-   '''
+
+   ```
    pip install -r requirements.txt
-   '''
+   ```
 
 2. Prepare your ImageNet dataset in the following structure:
 
+```
 data/imagenet-dataset/
 ├── train/
 │ ├── class1/
@@ -38,6 +46,7 @@ data/imagenet-dataset/
 ├── class1/
 ├── class2/
 └── ...
+```
 
 ##EC2 instance
 ![alt text](image.png)
@@ -101,13 +110,15 @@ The training pipeline includes several key components:
 ## Training
 
 To start training from scratch:
-'''
+
+```
 python src/train.py
-'''
+```
 
 ## Monitoring
 
 Training progress can be monitored using TensorBoard:
-'''
+
+```
 tensorboard --logdir logs --port 6006 --bind_all
-'''
+```
