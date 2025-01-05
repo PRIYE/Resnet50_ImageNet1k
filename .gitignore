@@ -169,3 +169,7 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Model checkpoint file
+logs/checkpoints/epoch=59-val_loss=1.46.ckpt
+logs/checkpoints/

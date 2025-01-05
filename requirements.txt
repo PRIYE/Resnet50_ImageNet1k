@@ -1,0 +1,15 @@
+torch
+torchvision
+pytorch-lightning>=2.4.0
+torch-lr-finder>=0.2.1
+tensorboard>=2.18.0
+pillow>=9.0.0
+matplotlib>=3.5.0
+timm>=1.0.11
+split-folders>=0.5.1
+loguru>=0.7.2
+rich>=13.9.4
+torch-lr-finder
+lightning[extra]
+setuptools[core]
+gradio
